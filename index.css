@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { @apply bg-paper text-ink font-sans antialiased; -webkit-tap-highlight-color: transparent; }
+.pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+.pt-safe { padding-top: env(safe-area-inset-top); }
+input, select, textarea { font-size: 16px; } /* evita zoom no iOS */
+.num { font-variant-numeric: tabular-nums; }
