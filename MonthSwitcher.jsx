@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { useStore } from '../lib/store'
-import { addMonthsKey, monthLabel } from '../lib/utils'
+import { useStore } from './store'
+import { addMonthsKey, monthLabel } from './utils'
 
 export default function MonthSwitcher() {
   const { month, setMonth } = useStore()

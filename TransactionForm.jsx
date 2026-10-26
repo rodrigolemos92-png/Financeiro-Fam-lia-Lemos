@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Button, Field, Input, MoneyInput, Segmented, Select, Sheet } from './ui'
-import { CATEGORIES, INCOME_TAGS, useStore } from '../lib/store'
-import { addMonthsISO, parseMoney, todayISO, uid } from '../lib/utils'
+import { CATEGORIES, INCOME_TAGS, useStore } from './store'
+import { addMonthsISO, parseMoney, todayISO, uid } from './utils'
 
 /**
  * Formulário único para lançar Despesa ou Receita (e editar).

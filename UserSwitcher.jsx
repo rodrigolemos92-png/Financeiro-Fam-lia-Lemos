@@ -1,5 +1,5 @@
-import { useStore } from '../lib/store'
-import { cx } from '../lib/utils'
+import { useStore } from './store'
+import { cx } from './utils'
 import { Users } from 'lucide-react'
 
 const COLORS = { 'u-husband': 'bg-brand text-white', 'u-wife': 'bg-rose-500 text-white' }

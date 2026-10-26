@@ -1,12 +1,12 @@
 import { useMemo, useState } from 'react'
 import { Check, ChevronLeft, ChevronRight, Pencil, Undo2 } from 'lucide-react'
-import { Badge, Card, Empty, Money, Segmented } from '../components/ui'
-import { STATUS_META, billStatus } from '../lib/calc'
-import { useStore } from '../lib/store'
+import { Badge, Card, Empty, Money, Segmented } from './ui'
+import { STATUS_META, billStatus } from './calc'
+import { useStore } from './store'
 import {
   addDaysISO, addMonthsKey, cx, formatDateBR, fromISO, monthKey, monthLabel,
   startOfWeekISO, toISO, todayISO, weekdayLabel,
-} from '../lib/utils'
+} from './utils'
 
 const WEEK = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
 

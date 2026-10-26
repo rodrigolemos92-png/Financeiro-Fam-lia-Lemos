@@ -1,10 +1,10 @@
 import { useMemo, useState } from 'react'
 import { PiggyBank, Plus, Trash2, TrendingUp, ArrowUpFromLine } from 'lucide-react'
-import { Button, Card, Empty, Field, Input, Money, MoneyInput, SectionTitle, Select, Sheet } from '../components/ui'
-import MonthSwitcher from '../components/MonthSwitcher'
-import { useStore } from '../lib/store'
-import { investmentBalance, investmentSummary } from '../lib/calc'
-import { formatDateBR, formatPct, monthKey, monthLabel, parseMoney, round2, todayISO, uid } from '../lib/utils'
+import { Button, Card, Empty, Field, Input, Money, MoneyInput, SectionTitle, Select, Sheet } from './ui'
+import MonthSwitcher from './MonthSwitcher'
+import { useStore } from './store'
+import { investmentBalance, investmentSummary } from './calc'
+import { formatDateBR, formatPct, monthKey, monthLabel, parseMoney, round2, todayISO, uid } from './utils'
 
 export default function Investments() {
   const { view, raw, month, userName, actor, remove } = useStore()

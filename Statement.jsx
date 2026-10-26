@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { ArrowDownCircle, ArrowUpCircle, Pencil, Trash2 } from 'lucide-react'
-import { Badge, Card, Empty, Money, Segmented } from '../components/ui'
-import MonthSwitcher from '../components/MonthSwitcher'
+import { Badge, Card, Empty, Money, Segmented } from './ui'
+import MonthSwitcher from './MonthSwitcher'
 import { BillRow } from './Agenda'
-import { useStore } from '../lib/store'
-import { monthKey, formatDateBR, todayISO, cx } from '../lib/utils'
+import { useStore } from './store'
+import { monthKey, formatDateBR, todayISO, cx } from './utils'
 
 /** Extrato do mês: todos os lançamentos, com editar / excluir / marcar como pago */
 export default function Statement({ onEdit }) {

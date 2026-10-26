@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { X } from 'lucide-react'
-import { cx } from '../lib/utils'
+import { cx } from './utils'
 
 export function Card({ className, children, ...p }) {
   return <div className={cx('rounded-2xl bg-white shadow-card ring-1 ring-black/[0.04]', className)} {...p}>{children}</div>

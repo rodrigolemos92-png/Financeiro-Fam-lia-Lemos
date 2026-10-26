@@ -1,5 +1,5 @@
 import { Home, CalendarDays, Plus, ListChecks, PiggyBank } from 'lucide-react'
-import { cx } from '../lib/utils'
+import { cx } from './utils'
 
 const ITEMS = [
   { id: 'home', label: 'Início', icon: Home },

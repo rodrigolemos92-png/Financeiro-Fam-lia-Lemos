@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Wallet } from 'lucide-react'
-import { supabase } from '../lib/supabase'
-import { useStore } from '../lib/store'
-import { Button, Field, Input, Segmented } from '../components/ui'
+import { supabase } from './supabase'
+import { useStore } from './store'
+import { Button, Field, Input, Segmented } from './ui'
 
 function Frame({ title, subtitle, children }) {
   return (

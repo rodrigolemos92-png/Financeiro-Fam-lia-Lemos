@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { ArrowLeft, Landmark, Pencil, Plus, Trash2 } from 'lucide-react'
-import { Button, Card, Empty, Field, Input, Money, MoneyInput, SectionTitle, Select, Sheet } from '../components/ui'
-import { Avatar } from '../components/UserSwitcher'
-import { useStore } from '../lib/store'
-import { accountBalance, netWorth } from '../lib/calc'
-import { parseMoney, uid } from '../lib/utils'
+import { Button, Card, Empty, Field, Input, Money, MoneyInput, SectionTitle, Select, Sheet } from './ui'
+import { Avatar } from './UserSwitcher'
+import { useStore } from './store'
+import { accountBalance, netWorth } from './calc'
+import { parseMoney, uid } from './utils'
 
 export default function Accounts({ onBack }) {
   const { raw, upsert, remove, rename, actor, clearAll, signOut, authUser } = useStore()

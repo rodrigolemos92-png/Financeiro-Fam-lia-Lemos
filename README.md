@@ -13,8 +13,11 @@ React + Vite + Tailwind + Supabase (banco, login e sincronização em tempo real
 5. **Authentication → Sign In / Providers**: desligue **"Allow new users to sign up"**. Assim só vocês dois entram.
 
 ### 2) GitHub (guardar o código)
-1. Crie uma conta em github.com → **New repository** (privado) → "uploading an existing file".
-2. Arraste **o conteúdo da pasta** `financas-familia` (não o .zip). Confirme com **Commit changes**.
+Este pacote **não tem pastas**: são só arquivos soltos, para o upload pelo site funcionar sem erro.
+1. Descompacte o zip. Abra a pasta e selecione **todos os arquivos** (Ctrl+A).
+2. No repositório do GitHub: **Add file → Upload files** → arraste os arquivos selecionados.
+3. Se o GitHub avisar que os nomes já existem, tudo bem: eles serão substituídos.
+4. Confira que `index.html`, `main.jsx` e `package.json` aparecem na lista → **Commit changes**.
 
 ### 3) Vercel (gerar o link)
 1. Entre em vercel.com com a conta do GitHub → **Add New → Project** → escolha o repositório → **Deploy**.
@@ -35,14 +38,17 @@ npm install
 npm run dev
 ```
 
-## Estrutura
+## Arquivos (todos na raiz)
 ```
-supabase/schema.sql              tabelas, enums, view de saldos, RLS
-supabase/02_primeiro_acesso.sql  função de primeiro acesso + ajustes de segurança
-src/lib/supabase.js              conexão
-src/lib/store.jsx                dados (leitura, gravação otimista, tempo real)
-src/lib/calc.js                  saldos, vencimentos, resumo, CDB, patrimônio
-src/screens/                     Auth, Dashboard, Agenda, Statement, Investments, Accounts
+index.html, main.jsx, App.jsx, index.css     entrada do app
+supabase.js, store.jsx                       conexão e dados (leitura, gravação, tempo real)
+calc.js, utils.js                            saldos, vencimentos, resumo, CDB, datas/moeda
+Auth.jsx, Dashboard.jsx, Agenda.jsx,
+Statement.jsx, Investments.jsx, Accounts.jsx telas
+ui.jsx, UserSwitcher.jsx, BottomNav.jsx,
+MonthSwitcher.jsx, TransactionForm.jsx       componentes
+schema.sql, 02_primeiro_acesso.sql           banco (rodar no SQL Editor do Supabase)
+manifest.webmanifest, icon-*.png             ícone do app no celular
 ```
 
 ## Regras de negócio

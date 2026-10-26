@@ -1,9 +1,9 @@
 import { ArrowDownRight, ArrowUpRight, CalendarClock, ChevronRight, Landmark, PiggyBank, TrendingUp, Wallet } from 'lucide-react'
-import { Badge, Card, Money, SectionTitle } from '../components/ui'
-import MonthSwitcher from '../components/MonthSwitcher'
-import { useStore } from '../lib/store'
-import { STATUS_META, accountBalance, billStatus, investmentSummary, monthSummary, netWorth } from '../lib/calc'
-import { formatDayMonth, formatPct, monthKey, monthShort, todayISO } from '../lib/utils'
+import { Badge, Card, Money, SectionTitle } from './ui'
+import MonthSwitcher from './MonthSwitcher'
+import { useStore } from './store'
+import { STATUS_META, accountBalance, billStatus, investmentSummary, monthSummary, netWorth } from './calc'
+import { formatDayMonth, formatPct, monthKey, monthShort, todayISO } from './utils'
 
 export default function Dashboard({ onGo }) {
   const { view, month, userName } = useStore()
